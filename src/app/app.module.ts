@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
-// import { APP_BASE_HREF } from '@angular/common';
+import { APP_BASE_HREF } from '@angular/common';
 
 import { AppComponent } from './app.component';
 
@@ -19,7 +19,7 @@ import { AppComponent } from './app.component';
     AppRoutingModule,
     RouterModule
   ],
-  // providers: [{provide: APP_BASE_HREF, useValue: "/"}],
+  providers: [{provide: APP_BASE_HREF, useValue: "/angular-demo"}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
