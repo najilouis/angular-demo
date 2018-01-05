@@ -1,0 +1,9 @@
+body.dark{
+@import "dark";
+@import "content";
+}
+
+body.light{
+    @import "light";
+    @import "content";
+}

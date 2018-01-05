@@ -1,0 +1,16 @@
+// section{
+//     background: $bgcolor;
+// }
+// @mixin test($mode){
+//     @if
+// }
+h1{
+    background: $h1color;
+}
+span{
+    background: $spancolor;
+}
+
+h1,span{
+    color: #FFF;
+}
