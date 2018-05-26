@@ -4,8 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
-import { APP_BASE_HREF } from '@angular/common';
-
+// import { APP_BASE_HREF } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -17,9 +17,11 @@ import { AppComponent } from './app.component';
     FormsModule,
     HttpModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    HttpClientModule
   ],
-  providers: [{provide: APP_BASE_HREF, useValue: "/angular-demo"}],
+  // providers: [{provide: APP_BASE_HREF, useValue: "/"}],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

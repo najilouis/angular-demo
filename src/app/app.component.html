@@ -1,1 +1,12 @@
-<router-outlet></router-outlet>
+<header>
+    header
+</header>
+<div>
+    <section class="side">side</section>
+    <div>
+        <router-outlet></router-outlet>
+        <footer>footer</footer>
+        <div (click)="generateToken()">ENCODE</div>
+        <div (click)="decodeToken()">DECODE</div>
+    </div>
+</div>
